@@ -1,0 +1,100 @@
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6f0ff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container styles */
+#container {
+    width: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Note styles */
+.note {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Color box for note */
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: black;
+}
+
+/* Content inside the note */
+.content {
+    flex: 1;
+    text-align: center;
+    color: black;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Edit and delete buttons for note */
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: blue;
+    margin-right: 5px;
+}
+
+.delete-button {
+    background-color: red;
+}
+
+/* Save and Erase buttons */
+button[type="button"] {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"].save-button {
+    background-color: green;
+    color: white;
+}
+
+button[type="button"].erase-button {
+    background-color: #ccc;
+    color:black;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+}
